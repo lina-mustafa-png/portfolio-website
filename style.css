@@ -1,0 +1,49 @@
+h1{
+    font-size: 68px;
+    margin-bottom: 2px;
+    font-family: "Advent Pro", sans-serif;
+}
+
+#p1{
+    font-size: 20px;
+    margin-top: 10px;
+    font-family: "Andada Pro", serif;
+}
+
+body{
+    margin-top: 15%;
+    margin-bottom: 15%;
+    background-image: url(wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn1, #btn2, #btn3, #btn4 {
+    font-size: 25px;
+    font-family: "Andada Pro", serif;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 10px 15px;
+    border-radius: 5px;
+    border: 2px;
+}
+
+#btn1:hover, #btn2:hover, #btn3:hover, #btn4:hover{
+    background-color:rgb(235, 232, 205);
+    transform:scale(1.05);
+}
