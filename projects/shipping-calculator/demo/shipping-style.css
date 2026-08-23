@@ -4,6 +4,15 @@ h1{
     font-family: "Advent Pro", sans-serif;
 }
 
+#label1, #label2, #label3, #label4, #label5, #label6 {
+    font-size: 25px;
+    font-family: "Andada Pro", serif;
+}
+
 body{
-    background-color: lightblue;
+    background-color: rgb(194, 230, 241);
+}
+
+#btn1:hover{
+    cursor: pointer;
 }

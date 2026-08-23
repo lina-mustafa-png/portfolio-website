@@ -9,11 +9,14 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Andada+Pro:ital,wght@0,400..840;1,400..840&display=swap" rel="stylesheet">
         <body>
             <button id="backbtn1"> <img src="../../../backbtn.png" width="20" height="20"> Back</button>
 
             <h1>Shipping Cost Calculator</h1>
-            <label>Parcel Type</label>
+            <label id="label1">Parcel Type</label>
             <select id="type">
                 <option value="Option">Select</option>
                 <option value="standard">Standard</option>
@@ -21,13 +24,13 @@
                 <option value="international">International</option>
             </select>
 
-            <label><br>Weight (kg)</label>
+            <label id="label2"><br>Weight (kg)</label>
             <input id="weight" type="number">
 
-            <label>Distance (km)</label>
+            <label id="label3"><br>Distance (km)</label>
             <input id="distance" type="number">
 
-            <label>Size</label>
+            <label id="label4"><br>Size</label>
             <select id="size">
                 <option value="Option">Select</option>
                 <option value="S">Small</option>
@@ -35,13 +38,13 @@
                 <option value="L">Large</option>
             </select>
 
-            <label>Insurance</label>
+            <label id="label5"><br>Insurance</label>
             <input id="insurance" type="checkbox">
 
-            <label>Same Day Delivery</label>
+            <label id="label6"><br>Same Day Delivery</label>
             <input id="sameDayDel" type="checkbox">
 
-            <button onClick="calculateCost()">Calculate Cost</button>
+            <button id="btn1" onClick="calculateCost()"><br>Calculate Cost</button>
             <h2 id="result"></h2>
 
             <script src="shipping-script.js"></script>
