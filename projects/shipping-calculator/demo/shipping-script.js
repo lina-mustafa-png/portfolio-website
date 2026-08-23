@@ -4,14 +4,18 @@ function calculateCost(){
     let shippingType = document.getElementById("type").value;
     let size = document.getElementById("size").value;
 
+    let result = document.getElementById("result");
+
     if (weightInput == "" && distanceInput == "" && shippingType == "Option" && size == "Option") {
-        document.getElementById("result").innerHTML = "No data entered.";
+        result.innerHTML = "No data entered.";
+        result.className = "error";
         return;
     }
+    
     let weight = Number(weightInput);
     let distance = Number(distaceInput);
     let insurance = document.getElementById("insurance").checked;
-    
+
     let cost = 3.50 + (weight * 1.20) + (distance * 0.05); // Base cost: weight + distance, with small base fee
 
     //Parcel.java

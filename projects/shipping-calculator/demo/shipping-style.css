@@ -11,6 +11,10 @@ h1{
     margin-bottom: 15px;
 }
 
+.error{
+    color: red;
+}
+
 body{
     background-color: rgb(194, 230, 241);
 }
