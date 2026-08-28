@@ -37,6 +37,19 @@ function calculateCost(){
     }
 
     //ExpressParcel.java
+    document.getElementById("sameDayDel").disabled = true;
+
+    document.getElementById("type").addEventListener("change", function () {
+        const sameDay = document.getElementById("sameDayDel");
+
+        if (this.value === "express"){
+            sameDay.disabled = false;
+        } else {
+            sameDay.checked = false;
+            sameDay.disabled = true;
+        }
+    });
+
     if(shippingType === "express"){
         cost *= 1.35;
 
