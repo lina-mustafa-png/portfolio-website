@@ -13,10 +13,12 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Andada+Pro:ital,wght@0,400..840;1,400..840&display=swap" rel="stylesheet">
     </head>
-        <body>
-            <button id="backbtn1"> <img src="../../../backbtn.png" width="20" height="20"> Back</button>
+    <body>
+        <button id="backbtn1"> <img src="../../../backbtn.png" width="20" height="20"> Back</button>
 
-            <h1>Shipping Cost Calculator</h1>
+        <h1>Shipping Cost Calculator</h1>
+
+        <div class="row">
             <label id="label1">Parcel Type</label>
             <select id="type">
                 <option value="Option">Select</option>
@@ -24,7 +26,7 @@
                 <option value="express">Express</option>
                 <option value="international">International</option>
             </select>
-
+            
             <label id="label2"><br>Weight (kg)</label>
             <input id="weight" type="number">
 
@@ -49,13 +51,14 @@
 
             <br><button id="btn1" onClick="calculateCost()">Calculate Cost</button>
             <h2 id="result"></h2>
+        </div>
+            
+        <script src="shipping-script.js"></script>
 
-            <script src="shipping-script.js"></script>
-
-            <script>
-                document.getElementById("backbtn1").onclick = function () {
-                    window.location.href = "../../../java.html";
-                };
-            </script>
-        </body>
+        <script>
+            document.getElementById("backbtn1").onclick = function () {
+                window.location.href = "../../../java.html";
+            };
+        </script>
+    </body>
 </html>
