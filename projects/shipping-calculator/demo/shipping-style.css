@@ -29,16 +29,36 @@ body{
 
 .row {
     display: grid;
-    grid-template-columns: 160px 200px;
+    grid-template-columns: 160px 100px;
     align-items: center;
     gap: 20px;
     margin-bottom: 15px;
+    margin-left: 25%
 }
 
-#btn1:hover{
+.sameDayContainer {
+    display: grid;
+    grid-template-columns: 160px 100px;
+    align-items: center;
+    margin-left: 25%;
+}
+
+#type:hover{
+    cursor: pointer;
+}
+
+#size:hover{
+    cursor: pointer;
+}
+
+#insurance:hover {
     cursor: pointer;
 }
 
 #sameDayDel:hover {
+    cursor: pointer;
+}
+
+#btn1:hover{
     cursor: pointer;
 }
