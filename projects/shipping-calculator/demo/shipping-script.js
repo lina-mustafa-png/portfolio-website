@@ -44,7 +44,7 @@ function calculateCost(){
         if (this.value === "express"){
             sameDayContainer.style.display = "block";
         } else {
-            sameDayConatiner.style.display = "none";
+            sameDayContainer.style.display = "none";
             sameDay.checked = false;
         }
     });
