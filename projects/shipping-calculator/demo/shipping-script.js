@@ -1,3 +1,16 @@
+document.getElementById("type").addEventListener("change", function () {
+        const sameDayContainer = document.getElementById("sameDayContainer");
+        const sameDay = document.getElementById("sameDayDel");
+
+        if (this.value === "express"){
+            sameDayContainer.style.display = "block";
+        } else {
+            sameDayContainer.style.display = "none";
+            sameDay.checked = false;
+        }
+    });
+
+
 function calculateCost(){
     let weightInput = document.getElementById("weight").value;
     let distanceInput = document.getElementById("distance").value;
@@ -37,18 +50,6 @@ function calculateCost(){
     }
 
     //ExpressParcel.java
-    document.getElementById("type").addEventListener("change", function () {
-        const sameDayContainer = document.getElementById("sameDayContainer");
-        const sameDay = document.getElementById("sameDayDel");
-
-        if (this.value === "express"){
-            sameDayContainer.style.display = "block";
-        } else {
-            sameDayContainer.style.display = "none";
-            sameDay.checked = false;
-        }
-    });
-
     if(shippingType === "express"){
         cost *= 1.35;
 
