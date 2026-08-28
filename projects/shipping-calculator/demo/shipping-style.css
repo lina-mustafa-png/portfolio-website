@@ -7,6 +7,10 @@ h1{
     font-family: "Advent Pro", sans-serif;
 }
 
+#sameDayContainer {
+    display: none;
+}
+
 #label1, #label2, #label3, #label4, #label5, #label6 {
     font-size: 25px;
     font-family: "Andada Pro", serif;

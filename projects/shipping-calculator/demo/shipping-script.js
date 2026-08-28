@@ -37,16 +37,15 @@ function calculateCost(){
     }
 
     //ExpressParcel.java
-    document.getElementById("sameDayDel").disabled = true;
-
     document.getElementById("type").addEventListener("change", function () {
+        const sameDayContainer = document.getElementById("sameDayContainer");
         const sameDay = document.getElementById("sameDayDel");
 
         if (this.value === "express"){
-            sameDay.disabled = false;
+            sameDayContainer.style.display = "block";
         } else {
+            sameDayConatiner.style.display = "none";
             sameDay.checked = false;
-            sameDay.disabled = true;
         }
     });
 
