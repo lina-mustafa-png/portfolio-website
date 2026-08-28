@@ -6,12 +6,12 @@ function calculateCost(){
 
     let result = document.getElementById("result");
 
-    if (weightInput == "" && distanceInput == "" && shippingType == "Option" && size == "Option") {
+    if (weightInput === "" && distanceInput === "" && shippingType === "Option" && size === "Option") {
         result.innerHTML = "No data entered.";
         result.className = "error";
         return;
     }
-    
+
     let weight = Number(weightInput);
     let distance = Number(distaceInput);
     let insurance = document.getElementById("insurance").checked;
