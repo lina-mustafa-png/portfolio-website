@@ -3,7 +3,7 @@ document.getElementById("type").addEventListener("change", function () {
         const sameDay = document.getElementById("sameDayDel");
 
         if (this.value === "express"){
-            sameDayContainer.style.display = "block";
+            sameDayContainer.style.display = "grid";
         } else {
             sameDayContainer.style.display = "none";
             sameDay.checked = false;
