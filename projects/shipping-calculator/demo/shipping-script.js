@@ -13,7 +13,7 @@ function calculateCost(){
     }
 
     let weight = Number(weightInput);
-    let distance = Number(distaceInput);
+    let distance = Number(distanceInput);
     let insurance = document.getElementById("insurance").checked;
 
     let cost = 3.50 + (weight * 1.20) + (distance * 0.05); // Base cost: weight + distance, with small base fee
@@ -51,6 +51,6 @@ function calculateCost(){
         cost += cost * 0.12;
     }
 
-    document.getElementById("result").innerHTML = "Shipping Cost: $" + cost.toFixed(2);
-    
+    result.innerHTML = "Shipping Cost: $" + cost.toFixed(2);
+    result.className = "";
 }
