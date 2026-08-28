@@ -7,6 +7,12 @@ h1{
     font-family: "Advent Pro", sans-serif;
 }
 
+p1 {
+    font-size: 20px;
+    font-family: "Andada Pro", serif;
+    margin-top: 5px;
+}
+
 #sameDayContainer {
     display: none;
 }
