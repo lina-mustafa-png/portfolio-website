@@ -9,7 +9,6 @@ h1{
 
 #sameDayContainer {
     display: none;
-    margin: 0;
 }
 
 #label1, #label2, #label3, #label4, #label5, #label6 {
@@ -35,6 +34,7 @@ body{
     margin-bottom: 15px;
     margin-left: 15%
 }
+
 
 #type:hover{
     cursor: pointer;
