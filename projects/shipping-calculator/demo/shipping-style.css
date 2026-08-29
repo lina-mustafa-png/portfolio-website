@@ -7,11 +7,10 @@ h1{
     font-family: "Advent Pro", sans-serif;
 }
 
-p1 {
+#overview {
     font-size: 15px;
     font-family: "Andada Pro", serif;
-    margin: 20px 20px;
-
+    margin-bottom: 40px;
 }
 
 #sameDayContainer {
@@ -31,6 +30,8 @@ p1 {
 
 body{
     background-color: rgb(194, 230, 241);
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .row {
@@ -41,7 +42,6 @@ body{
     margin-bottom: 15px;
     margin-left: 15%
 }
-
 
 #type:hover{
     cursor: pointer;
