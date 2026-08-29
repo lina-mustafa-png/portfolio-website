@@ -11,6 +11,8 @@ h1{
     font-size: 15px;
     font-family: "Andada Pro", serif;
     margin-bottom: 40px;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
 #sameDayContainer {
@@ -30,8 +32,6 @@ h1{
 
 body{
     background-color: rgb(194, 230, 241);
-    padding-left: 40px;
-    padding-right: 40px;
 }
 
 .row {
