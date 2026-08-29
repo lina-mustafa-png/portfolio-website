@@ -1,10 +1,24 @@
 document.getElementById("type").addEventListener("change", function () {
         const sameDayContainer = document.getElementById("sameDayContainer");
         const sameDay = document.getElementById("sameDayDel");
+        const description = document.getElementById("typeDescription");
 
-        if (this.value === "express"){
+        if (this.value === "standard"){
+            description.textContent = "Standard delivery with size-based pricing.";
+            sameDayContainer.style.display = "none";
+            sameDay.checked = false;
+        }
+        else if (this.value === "express"){
+            description.textContent = "Faster delivery with an express surcharge and optional same-day service.";
             sameDayContainer.style.display = "grid";
-        } else {
+        } 
+        else if (this.value === "international"){
+            description.textContent = "International shipping with handling fees and customs charges.";
+            sameDayContainer.style.display = "none";
+            sameDay.checked = false;
+        }
+        else {
+            description.textContent = "";
             sameDayContainer.style.display = "none";
             sameDay.checked = false;
         }

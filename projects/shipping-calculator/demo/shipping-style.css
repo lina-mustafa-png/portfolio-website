@@ -1,9 +1,7 @@
 h1{
     font-size: 68px;
-    /* margin-left: 25%;
-    margin-right: 25%;
-    margin-top: 3%; */
     margin-top: 0px;
+    margin-bottom: 3px;
     text-align: center;
     font-family: "Advent Pro", sans-serif;
 }
@@ -37,7 +35,7 @@ body{
 
 .row {
     display: grid;
-    grid-template-columns: 180px 100px;
+    grid-template-columns: 200px 100px;
     align-items: center;
     gap: 15px;
     margin-bottom: 15px;
