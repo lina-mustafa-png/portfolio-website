@@ -22,7 +22,7 @@ h1{
     display: none;
 }
 
-#label1, #label2, #label3, #label4, #label5, #label6 {
+.label-group label {
     font-size: 25px;
     font-family: "Andada Pro", serif;
     margin-top: 2%;
@@ -41,24 +41,26 @@ body{
     display: grid;
     grid-template-columns: 200px 100px 200px;
     align-items: center;
-    gap: 15pxpx;
+    column-gap: 30px;
     margin-bottom: 30px;
     margin-left: 15%
-}
-
-.label-group label {
-    display: block;
-    font-size: 25px;
 }
 
 .helper {
     margin: 5px 0 0;
     font-size: 14px;
+    font-family: "Andada Pro", serif;
 }
 
 .description {
     margin: 0;
     font-size: 14px;
+    font-family: "Andada Pro", serif;
+}
+
+.row input[type="number"], .row select {
+    width: 100%;
+    box-sizing: border-box;
 }
 
 #btn1 {

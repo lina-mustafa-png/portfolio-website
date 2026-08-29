@@ -18,10 +18,13 @@
 
         <h1>Shipping Cost Calculator</h1>
         <p id="overview">This project calculates parcel delivery costs based on factors such as weight, distance, parcel size, insurance, and delivery type. This project uses object-oriented programming concepts like inheritance, method overriding, and class specialization to apply different priocing rules for standard, express, and international shipments.</p>
-
+    
         <div class="row">
-            <label id="label1">Parcel Type</label>
-            <p class="helper">Select a delivery method.</p>
+            <div class="label-group">
+                <label for="type">Parcel Type</label>
+                <p class="helper">Select a delivery method.</p>
+            </div>
+
             <select id="type">
                 <option value="Option">Select</option>
                 <option value="standard">Standard</option>
@@ -29,36 +32,55 @@
                 <option value="international">International</option>
             </select>
             <p id="typeDescription" class="description"></p>
+        </div>
 
-            <label id="label2"><br>Weight (kg)</label>
+        <div class="row">
+            <div class="label-group">
+                <label for="weight"><br>Weight (kg)</label>
+                <p class="helper">Enter the parcel's weight in kilograms.</p>
+            </div>
             <input id="weight" type="number">
-            <p class="helper">Enter the parcel's weight in kilograms.</p>
+        </div>
 
-            <label id="label3"><br>Distance (km)</label>
+        <div class="row">
+            <div class="label-group">
+                <label for="distance"><br>Distance (km)</label>
+                <p class="helper">Enter the total delivery distance.</p>
+            </div>
             <input id="distance" type="number">
-            <p class="helper">Enter the total delivery distance.</p>
+        </div>
 
-            <label id="label4"><br>Size</label>
+        <div class="row">
+            <div class="label-group">
+                <label for="size"><br>Size</label>
+                <p class="helper">Parcel size affects the shipping surcharge.</p>
+            </div>
+
             <select id="size">
-            <p class="helper">Parcel size affects the shipping surcharge.</p>
                 <option value="Option">Select</option>
                 <option value="S">Small</option>
                 <option value="M">Medium</option>
                 <option value="L">Large</option>
             </select>
             <p id="sizeDescription" class="description"></p>
-
-            <label id="label5"><br>Insurance</label>
-            <input id="insurance" type="checkbox">
-            <p class="helper">Adds optional protection to the shipment.</p>
         </div>
 
-            <div class="row" id="sameDayContainer">
-            <label id="label6"><br>Same Day Delivery</label>
-            <input id="sameDayDel" type="checkbox">
-            <p class="description">Optional same-day service for Express parcels.</p>
+        <div class="row">
+            <div class="label-group">
+                <label for="insurance"><br>Insurance</label>
+                <p class="helper">Adds optional protection to the shipment.</p>
             </div>
+            <input id="insurance" type="checkbox">
+        </div>
 
+        <div class="row" id="sameDayContainer">
+            <div class="label-group">
+                <label for="sameDayDel"><br>Same Day Delivery</label>
+                <p class="description">Optional same-day service for Express parcels.</p>
+            </div>
+            <input id="sameDayDel" type="checkbox">
+        </div>
+        
             <br><button id="btn1" onClick="calculateCost()">Calculate Cost</button>
             <h2 id="result"></h2>
             
