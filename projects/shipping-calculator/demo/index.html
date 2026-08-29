@@ -27,13 +27,15 @@
                 <option value="express">Express</option>
                 <option value="international">International</option>
             </select>
-            <p id="typeDescription"></p>
+            <p id="typeDescription" class="description">Select a delivery method.</p>
 
             <label id="label2"><br>Weight (kg)</label>
             <input id="weight" type="number">
+            <p class="description">Enter the parcel's weight in kilograms.</p>
 
             <label id="label3"><br>Distance (km)</label>
             <input id="distance" type="number">
+            <p class="description">Enter the total delivery distance.</p>
 
             <label id="label4"><br>Size</label>
             <select id="size">
@@ -42,14 +44,17 @@
                 <option value="M">Medium</option>
                 <option value="L">Large</option>
             </select>
+            <p class="description">Parcel size affects the shipping surcharge.</p>
 
             <label id="label5"><br>Insurance</label>
             <input id="insurance" type="checkbox">
+            <p class="description">Adds optional protection to the shipment.</p>
         </div>
 
             <div class="row" id="sameDayContainer">
             <label id="label6"><br>Same Day Delivery</label>
             <input id="sameDayDel" type="checkbox">
+            <p class="description">Optional same-day service for Express parcels.</p>
             </div>
 
             <br><button id="btn1" onClick="calculateCost()">Calculate Cost</button>
