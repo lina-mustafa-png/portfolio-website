@@ -10,8 +10,8 @@ h1{
     font-size: 15px;
     font-family: "Andada Pro", serif;
     margin-bottom: 40px;
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 12%;
+    padding-right: 12%;
 }
 
 #sameDayContainer {
@@ -43,7 +43,8 @@ body{
 }
 
 #btn1 {
-    display: grid;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
