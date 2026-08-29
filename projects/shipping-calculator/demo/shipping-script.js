@@ -4,7 +4,7 @@ document.getElementById("type").addEventListener("change", function () {
         const description = document.getElementById("typeDescription");
 
         if (this.value === "standard"){
-            description.textContent = "Standard delivery with size-based pricing.";
+            description.textContent = "Lower-cost delivery with size-based pricing.";
             sameDayContainer.style.display = "none";
             sameDay.checked = false;
         }
@@ -13,16 +13,33 @@ document.getElementById("type").addEventListener("change", function () {
             sameDayContainer.style.display = "grid";
         } 
         else if (this.value === "international"){
-            description.textContent = "International shipping with handling fees and customs charges.";
+            description.textContent = "International shipping with handling and customs fees.";
             sameDayContainer.style.display = "none";
             sameDay.checked = false;
         }
         else {
-            description.textContent = "";
+            description.textContent = "Select a delivery method.";
             sameDayContainer.style.display = "none";
             sameDay.checked = false;
         }
     });
+
+document.getElementById("size").addEventListener("change", function () {
+    const sizeDecription = document.getElementById("sizeDescription");
+
+    if (this.value === "S"){
+        sizeDescription.textContent = "Small: Up to 30 x 20 x 10 cm";
+    }
+    else if (this.value === "M"){
+        sizeDescription.textContent = "Medium: Up to 50 x 40 x 30 cm";
+    }
+    else if (this.value === "L"){
+        sizeDescription.textContent = "Large: Up to 80 x 60 x 50 cm";
+    }
+    else {
+        sizeDecription.textContent = "";
+    }
+});
 
 
 function calculateCost(){

@@ -21,34 +21,36 @@
 
         <div class="row">
             <label id="label1">Parcel Type</label>
+            <p class="helper">Select a delivery method.</p>
             <select id="type">
                 <option value="Option">Select</option>
                 <option value="standard">Standard</option>
                 <option value="express">Express</option>
                 <option value="international">International</option>
             </select>
-            <p id="typeDescription" class="description">Select a delivery method.</p>
+            <p id="typeDescription" class="description"></p>
 
             <label id="label2"><br>Weight (kg)</label>
             <input id="weight" type="number">
-            <p class="description">Enter the parcel's weight in kilograms.</p>
+            <p class="helper">Enter the parcel's weight in kilograms.</p>
 
             <label id="label3"><br>Distance (km)</label>
             <input id="distance" type="number">
-            <p class="description">Enter the total delivery distance.</p>
+            <p class="helper">Enter the total delivery distance.</p>
 
             <label id="label4"><br>Size</label>
             <select id="size">
+            <p class="helper">Parcel size affects the shipping surcharge.</p>
                 <option value="Option">Select</option>
                 <option value="S">Small</option>
                 <option value="M">Medium</option>
                 <option value="L">Large</option>
             </select>
-            <p class="description">Parcel size affects the shipping surcharge.</p>
+            <p id="sizeDescription" class="description"></p>
 
             <label id="label5"><br>Insurance</label>
             <input id="insurance" type="checkbox">
-            <p class="description">Adds optional protection to the shipment.</p>
+            <p class="helper">Adds optional protection to the shipment.</p>
         </div>
 
             <div class="row" id="sameDayContainer">

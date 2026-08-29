@@ -39,16 +39,21 @@ body{
 
 .row {
     display: grid;
-    grid-template-columns: 200px 100px 350px;
+    grid-template-columns: 400px 220px 400px;
     align-items: center;
     gap: 20px;
     margin-bottom: 15px;
     margin-left: 15%
 }
 
+.helper {
+    margin: 5px 0 0;
+    font-size: 14px;
+}
+
 .description {
     margin: 0;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 #btn1 {
