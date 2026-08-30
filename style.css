@@ -2,7 +2,7 @@ h1{
     font-size: 200px;
     margin-bottom: 2px;
     font-family: "Pinyon Script", cursive;
-    font-weight: 530;
+    font-weight: 550;
     font-style: normal;
     margin-top: 3%;
     color: #F4C9D6;
@@ -12,8 +12,8 @@ h2{
     font-size: 180px;
     font-family: "Advent Pro", serif;
     font-style: normal;
-    font-weight: 400;
-    margin-top: -80px;
+    font-weight: 500;
+    margin-top: -90px;
     color: #F4C9D6;
 }
 
