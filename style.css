@@ -4,7 +4,7 @@ h1{
     font-family: "Pinyon Script", cursive;
     font-weight: 550;
     font-style: normal;
-    margin-top: 3%;
+    margin-top: 8%;
     color: #F4C9D6;
 }
 
@@ -24,14 +24,14 @@ h2{
 }
 
 body{
-    /* margin-top: 15%;
-    margin-bottom: 15%; */
-    background-image: url(brwn.jpg);
+    margin-top: 15%;
+    margin-bottom: 15%;
+    /* background-image: url(brwn.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
-    /* background-color: #36221f; */
+    background-attachment: fixed; */
+    background-color: #5D3721;
 }
 
 .text{
