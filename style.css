@@ -4,7 +4,7 @@ h1{
     font-family: "Pinyon Script", cursive;
     font-weight: 550;
     font-style: normal;
-    margin-top: 8%;
+    margin-top: 4%;
     color: #F4C9D6;
 }
 
@@ -24,8 +24,7 @@ h2{
 }
 
 body{
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-top: 5%;
     /* background-image: url(brwn.jpg);
     background-repeat: no-repeat;
     background-size: cover;
