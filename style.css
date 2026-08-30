@@ -1,5 +1,5 @@
 h1{
-    font-size: 210px;
+    font-size: 200px;
     margin-bottom: 2px;
     font-family: "Pinyon Script", cursive;
     font-weight: 530;
@@ -12,7 +12,7 @@ h2{
     font-size: 180px;
     font-family: "Advent Pro", serif;
     font-style: normal;
-    font-weight: 350;
+    font-weight: 400;
     margin-top: -80px;
     color: #F4C9D6;
 }
@@ -25,13 +25,13 @@ h2{
 
 body{
     /* margin-top: 15%;
-    margin-bottom: 15%;
-    background-image: url(wallpaper.jpg);
+    margin-bottom: 15%; */
+    background-image: url(brwnbackground.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; */
-    background-color: #36221f;
+    background-attachment: fixed;
+    /* background-color: #36221f; */
 }
 
 .text{
