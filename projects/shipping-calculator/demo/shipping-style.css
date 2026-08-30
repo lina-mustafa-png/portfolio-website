@@ -3,10 +3,7 @@ h1{
     margin-top: 0px;
     margin-bottom: 3px;
     text-align: center;
-    /* font-family: "Advent Pro", sans-serif; */
-    font-family: "Sacramento", cursive;
-    font-weight: 400;
-    font-style: normal;
+    font-family: "Advent Pro", sans-serif;
 }
 
 #overview {
