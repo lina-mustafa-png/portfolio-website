@@ -18,6 +18,12 @@ h2{
 }
 
 #p1{
+    font-size: 30px;
+    font-family: "Andada Pro", serif;
+    color: #F4C9D6;
+}
+
+#p2{
     font-size: 20px;
     margin-top: 10px;
     font-family: "Andada Pro", serif;
