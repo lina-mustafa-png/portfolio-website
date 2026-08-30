@@ -2,15 +2,17 @@ h1{
     font-size: 250px;
     margin-bottom: 2px;
     font-family: "Herr Von Muellerhoff", cursive;
-    font-weight: 500;
+    font-weight: 530;
     font-style: normal;
-    margin-top: 0%;
+    margin-top: 3%;
+    color: #F4C9D6;
 }
 
 h2{
-    font-size: 150px;
-    font-family: "Advent Pro", sans-serif;
-    font-weight: 300;
+    font-size: 180px;
+    font-family: "Archivo", sans-serif;
+    font-style: normal;
+    font-weight: 350;
     margin-top: -80px;
 }
 
@@ -22,12 +24,13 @@ h2{
 
 body{
     /* margin-top: 15%;
-    margin-bottom: 15%; */
+    margin-bottom: 15%;
     background-image: url(wallpaper.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: fixed; */
+    background-color: #3E2723;
 }
 
 .text{
