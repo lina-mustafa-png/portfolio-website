@@ -1,7 +1,7 @@
 h1{
     font-size: 200px;
     margin-bottom: 2px;
-    font-family: "Herr Von Muellerhoff", cursive;
+    font-family: "Great Vibes", cursive;
     font-weight: 400;
     font-style: normal;
     margin: 0;
@@ -20,8 +20,8 @@ h2{
 }
 
 body{
-    margin-top: 15%;
-    margin-bottom: 15%;
+    /* margin-top: 15%;
+    margin-bottom: 15%; */
     background-image: url(wallpaper.jpg);
     background-repeat: no-repeat;
     background-size: cover;
