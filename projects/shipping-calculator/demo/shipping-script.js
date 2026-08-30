@@ -53,6 +53,8 @@ function calculateCost(){
     if (weightInput === "" && distanceInput === "" && shippingType === "Option" && size === "Option") {
         result.innerHTML = "No data entered.";
         result.className = "error";
+
+        result.scrollIntoView({behavior: "smooth", block:"center"});
         return;
     }
 
@@ -97,4 +99,6 @@ function calculateCost(){
 
     result.innerHTML = "Shipping Cost: $" + cost.toFixed(2);
     result.className = "";
+
+    result.scrollIntoView({behavior: "smooth", block: "center"});
 }
