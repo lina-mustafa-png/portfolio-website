@@ -1,8 +1,8 @@
 h1{
-    font-size: 280px;
+    font-size: 250px;
     margin-bottom: 2px;
     font-family: "Herr Von Muellerhoff", cursive;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
     margin: 0%;
     padding: 0%;
@@ -11,7 +11,7 @@ h1{
 h2{
     font-size: 150px;
     font-family: "Advent Pro", sans-serif;
-    font-weight: 100;
+    font-weight: 200;
     margin-top: -80px;
 }
 
