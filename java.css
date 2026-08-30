@@ -6,7 +6,6 @@ h1{
 }
 
 body{
-    /* margin-top: 5%; */
     background-image: url(jbackground.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -96,8 +95,4 @@ body{
     font-family: "Andada Pro", serif;
     font-size: 28px;
     margin-bottom: 12px;
-}
-
-#backbtn {
-    margin: 0px;
 }
