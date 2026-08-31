@@ -7,36 +7,55 @@
         <title>lina's portfolio</title>
         <link rel="stylesheet" href="style.css"/>
         <link rel="icon" type="image/png" href="favicon.png">
-        <!-- title font -->
+        <!-- fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;500;600&family=Andada+Pro:wght@400;500&family=Pinyon+Script&display=swap" rel="stylesheet">
+    </head>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
-
-        <!-- p1 font -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Andada+Pro:ital,wght@0,400..840;1,400..840&display=swap" rel="stylesheet">
     <body>
     <!-- visibility on webpage -->
-        <div class="text">
+        <main class="hero">
+            <div class="animation">
+                <!-- coffee cup -->
+                <img class="coffee-cup" src="images/coffee-cup.png" alt="Illustrated cup of coffee">
+                <!-- coffee spill -->
+                <img class="coffee-spill" src="images/coffee-spill.png" alt="Illustrated cup of spilt coffee">
+                <!-- laptop -->
+                <div class="laptop-wrapper">
+                <img class="laptop" src="images/laptop.png" alt="Illustrated laptop">
+                
+                <div class="laptop-screen">
+                    <div class="error-text">ERROR_101</div>
+                    <h1 class="name">Lina Mustafa</h1>
+                </div>
+            </div>
+        </div>
+
+        <section class="introduction">
+            <h2>Software Engineering Portfolio</h2>
+
+            <p class="typewriter">
+                <span id="typed-text"></span>
+                <span class="cursor">|</span>
+            </p>
+        </section>
+        <a class="scroll-link" href="#menu">
+            <span>↓</span>
+        </a>
+        </main>
+
+        <section id="menu" class="menu">
+            <div class="menu-buttons">
+                <button id="projectsbtn" style="text-align: center;">Projects</button>
+            </div>
+        </section>
+        <!-- <div class="text">
             <h1 style="text-align: center;">Lina Mustafa's</h1>
             <h2 style="text-align: center;">Portfolio</h2>
             <p id="p1" style="text-align: center;">Software development and design</p>
-            <!-- <p id="p2" style="text-align: center;">Here is where I'll be keeping track of all my coding projects.</p> -->
-        </div>
-        <button id="projectsbtn" style="text-align: center;">Projects</button>
-        <!-- <div class="buttons">
-            <button id="btn1" style="text-align: center;">Python</button>
-            <button id="btn2" style="text-align: center;">HTML</button>
-            <button id="btn3" style="text-align: center;">Java</button>
-            <button id="btn4" style="text-align: center;">C/C++</button>
         </div> -->
 
         <script src="script.js"></script>
     </body>
-    </head>
 </html>
