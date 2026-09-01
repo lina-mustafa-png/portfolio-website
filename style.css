@@ -75,8 +75,8 @@ body{
 .laptop-screen{
     position: absolute;
     z-index: 2;
-    top: 38%;
-    left: 38%;
+    top: 30%;
+    left: 35%;
     width: 30%;
     height: 32%;
     display: flex;
