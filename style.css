@@ -50,9 +50,9 @@ body {
     z-index: 5;
     width: clamp(520px, 42vw, 680px);
     left: 15%;
-    top: 20%;
+    top: 50%;
     transform-origin: 45% 45%;
-    animation: tilt-cup 1.2s ease-in-out 2.7s forwards, hide-cup 0.15s linear 3.8s forwards;
+    animation: tilt-cup 1.2s ease-in-out 2.7s forwards, hide-cup 0.15s linear 3.7s forwards;
 }
 
 .laptop-wrapper {
@@ -62,7 +62,7 @@ body {
     bottom: 24%;
     width: min(800px, 70vw);
     transform: translateX(-50%);
-    animation: laptop-shake 0.45s ease-in-out 3.9s;
+    animation: laptop-shake 0.45s ease-in-out 3.7s;
 }
 
 .laptop {
@@ -138,7 +138,7 @@ body {
     margin-left: 0.15em;
     vertical-align: -0.15em;
     background-color: #f4c9d6;
-    animation: code-cursor-blink 0.65s steps(1) infinite, hide-cursor 0.1s linear 1.55s forwards;
+    animation: code-cursor-blink 0.65s steps(1) infinite, hide-cursor 0.1s linear 3.7s forwards;
 }
 
 .error {
@@ -177,7 +177,7 @@ body {
     text-align: center;
     text-shadow: 0 2px 6px rgb(38 21 13 / 45%);
     opacity: 0;
-    animation: reveal-name 0.8s ease 5s forwards;
+    animation: reveal-name 0.8s ease 4.8s forwards;
 }
 
 .coffee-spill {
