@@ -89,11 +89,12 @@ body {
 
 .screen-code {
     position: absolute;
-    inset: 0;
+    top: 50%;
+    left: 50%;
+    width: max-content;
+    max-width: 90%;
     margin: 0;
-    padding: 5%;
-    display: flex;
-    align-items: center;
+    padding: 0;
     color: #bcc2cc;
     font-family: 'Courier New', monospace;
     font-size: clamp(0.65rem, 1.4vw, 1.3rem);
@@ -102,7 +103,8 @@ body {
     text-align: left;
     white-space: pre;
     opacity: 1;
-    animation: hide-code 0.1s linear 1.55s forwards;
+    transform: translate(-50%, -50%);
+    animation: hide-code 0.01s linear 3.7s forwards;
 }
 
 .keyword {
@@ -153,7 +155,7 @@ body {
     font-weight: 700;
     text-align: center;
     opacity: 0;
-    animation: error-sequence 1.1s steps(2) 3.9s forwards;   
+    animation: error-sequence 1.1s steps(2) 3.7s forwards;   
 }
 
 .error small {
