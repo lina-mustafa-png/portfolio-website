@@ -48,11 +48,10 @@ body{
 .coffee-cup{
     position: absolute;
     z-index: 5;
-    width: clamp(100px, 12vw, 150px);
-    left: 22%;
-    bottom: 34%;
-    width: 47%;
-    transform-origin: 80% 80%;
+    width: clamp(520px, 42vw, 680px);
+    left: 17%;
+    top: 7%;
+    transform-origin: 45% 50%;
     animation: tilt-cup 1.2s ease-in-out 0.7s forwards, hide-cup 0.15s linear 1.5s forwards;
 }
 
@@ -60,7 +59,7 @@ body{
     position: absolute;
     z-index: 3;
     left: 50%;
-    bottom: 30%;
+    bottom: 15%;
     width: min(1250px, 120vw);
     transform: translateX(-50%);
     animation: laptop-shake 0.45s ease-in-out 2.25s;
@@ -114,10 +113,10 @@ body{
 
 .coffee-spill{
     position: absolute;
-    z-index: 5;
-    left: -25%;
-    bottom: -1%;
-    width: 78%;
+    z-index: 6;
+    left: 21%;
+    top: 24%;
+    width: clamp(560px, 45vw, 735px);
     opacity: 0;
     transform: scale(0.7);
     transform-origin: center;
