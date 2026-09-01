@@ -60,7 +60,7 @@ body{
     position: absolute;
     z-index: 3;
     left: 50%;
-    bottom: 20%;
+    bottom: 30%;
     width: min(1250px, 120vw);
     transform: translateX(-50%);
     animation: laptop-shake 0.45s ease-in-out 2.25s;
