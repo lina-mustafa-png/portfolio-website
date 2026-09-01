@@ -7,7 +7,7 @@ html {
 }
 
 body{
-    margin-top: 5%;
+    margin-top: 0;
     background-color: #26150D;
     color: #f4c9d6;
     font-family: "Andada Pro", serif;
@@ -15,10 +15,10 @@ body{
 
 .hero {
     min-height: 100vh;
-    padding: 1rem 1.5rem 3rem;
+    padding: 0 1.0 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     overflow: hidden;
 }
@@ -27,28 +27,38 @@ body{
 
 .animation{
     position: relative;
-    width: min(1350px, 100vw);
-    height: clamp(540px, 63vw, 760px);
+    width: min(1200px, 100vw);
+    aspect-ratio: 1200 / 675;
     flex-shrink: 0;
+}
+
+.desk {
+    position: absolute;
+    z-index: 1;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .coffee-cup{
     position: absolute;
     z-index: 4;
     width: clamp(650px, 70vw, 950px);
-
-    top: -14%;
-    left: -16%;
-    transform-origin: 45% 50%;
+    left: 17%;
+    bottom: 36%;
+    width: 12%;
+    transform-origin: 80% 80%;
     animation: tilt-cup 1.2s ease-in-out 0.7s forwards, hide-cup 0.15s linear 1.5s forwards;
 }
 
 .laptop-wrapper{
     position: absolute;
-    z-index: 2;
-    width: clamp(950px, 100vw, 1350px);
-    right: -4%;
-    bottom: -4%;
+    z-index: 3;
+    left: 28%;
+    bottom: 30%;
+    width: 47%;
     animation: laptop-shake 0.45s ease-in-out 2.25s;
 }
 
@@ -62,10 +72,10 @@ body{
 .laptop-screen{
     position: absolute;
     z-index: 2;
-    top: 19%;
-    left: 33%;
-    width: 36%;
-    height: 39%;
+    top: 18%;
+    left: 13%;
+    width: 74%;
+    height: 44%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,12 +88,12 @@ body{
     width: 100%;
     margin: 0;
     padding: 0 0.75rem;
-    text-align: center;
     color: #F4C9D6;
     font-family: "Pinyon Script", cursive;
-    font-size: clamp(2.5rem, 5.5vw, 5rem);
+    font-size: clamp(1.5rem, 4.5vw, 4.5rem);
     font-weight: 500;
-    line-height: 0.9;
+    line-height: 1;
+    text-align: center;
     opacity: 0;
     animation: reveal-name 0.8s ease 2.9s forwards;
 }
@@ -100,9 +110,9 @@ body{
 .coffee-spill{
     position: absolute;
     z-index: 5;
-    left: 31%;
-    bottom: -4%;
-    width: clamp(400px, 42vw, 580px);
+    left: -17%;
+    bottom: 1%;
+    width: 55%;
     opacity: 0;
     transform: scale(0.7);
     transform-origin: center;
@@ -113,30 +123,34 @@ body{
     position: relative;
     z-index: 6;
     margin-top: -2rem;
-    text-align: center;
+    display: flex;
+    justify-content: center;
     opacity: 0;
-    transform: translateY(15px);
-    animation: reveal-introduction 0.8s ease 3.6s forwards;
+    animation: reveal-introduction 0.01s ease 3.8s forwards;
 }
 
-.introduction h2{
+/* .introduction h2{
     margin: 0 0 0.6rem;
     font-family: "Advent Pro", sans-serif;
     font-size: clamp(2.4rem, 5vw, 4.8rem);
     font-weight: 500;
     line-height: 1;
     letter-spacing: 0.04em;
-}
+} */
 
 .typewriter{
-    min-height: 2rem;
-    margin: 0.75rem 0 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #F7E8DD;
-    font-size: clamp(1rem, 2.2vw, 1.4rem);
+    width: 0;
+    margin: 0 auto;
+    overflow: hidden;
     white-space: nowrap;
+    color: #F4C9D6;
+    border-right: 3px solid #f4c9d6;
+    font-family: "Advent Pro", sans-serif;
+    font-size: clamp(1.8rem, 4vw, 4rem);
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+    animation: typing 2.8s steps(30, end) 3.8s forwards, blink-cursor 0.7s step-end 3.8s infinite;
 }
 
 #typed-text{
