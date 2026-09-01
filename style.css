@@ -76,9 +76,9 @@ body{
     position: absolute;
     z-index: 2;
     top: 14.5%;
-    left: 3%;
-    width: 60%;
-    height: 42%;
+    left: -3%;
+    width: 30%;
+    height: 25%;
     display: flex;
     justify-content: center;
     align-items: center;
