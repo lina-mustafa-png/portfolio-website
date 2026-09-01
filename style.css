@@ -59,7 +59,7 @@ body{
     position: absolute;
     z-index: 3;
     left: 50%;
-    bottom: 9%;
+    bottom: 20%;
     width: min(800px, 70vw);
     transform: translateX(-50%);
     animation: laptop-shake 0.45s ease-in-out 2.25s;
@@ -76,9 +76,9 @@ body{
     position: absolute;
     z-index: 2;
     top: 28%;
-    left: 35%;
-    width: 30%;
-    height: 32%;
+    left: 30%;
+    width: 40%;
+    height: 42%;
     display: flex;
     justify-content: center;
     align-items: center;
