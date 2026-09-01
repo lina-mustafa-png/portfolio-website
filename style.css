@@ -60,7 +60,7 @@ body{
     z-index: 3;
     left: 50%;
     bottom: 9%;
-    width: min(1250px, 120vw);
+    width: min(1000px, 90vw);
     transform: translateX(-50%);
     animation: laptop-shake 0.45s ease-in-out 2.25s;
 }
