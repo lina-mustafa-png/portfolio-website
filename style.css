@@ -50,7 +50,7 @@ body{
     z-index: 5;
     width: clamp(520px, 42vw, 680px);
     left: 17%;
-    top: 7%;
+    top: 15%;
     transform-origin: 45% 50%;
     animation: tilt-cup 1.2s ease-in-out 0.7s forwards, hide-cup 0.15s linear 1.5s forwards;
 }
