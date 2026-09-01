@@ -43,15 +43,13 @@ body{
     height: 100%;
     object-fit: cover;
     object-position: center;
-    margin: 0;
-    padding: 0;
 }
 
 .coffee-cup{
     position: absolute;
-    z-index: 4;
-    width: clamp(190px, 16vw, 300px);
-    left: 10%;
+    z-index: 5;
+    width: clamp(140px, 12vw, 230px);
+    left: 22%;
     bottom: 34%;
     width: 47%;
     transform-origin: 80% 80%;
@@ -62,8 +60,8 @@ body{
     position: absolute;
     z-index: 3;
     left: 50%;
-    bottom: 15%;
-    width: min(1000px, 80vw);
+    bottom: 27%;
+    width: min(520px, 40vw);
     transform: translateX(-50%);
     animation: laptop-shake 0.45s ease-in-out 2.25s;
 }
@@ -78,25 +76,26 @@ body{
 .laptop-screen{
     position: absolute;
     z-index: 2;
-    top: 19%;
-    left: 33%;
-    width: 32%;
-    height: 35%;
+    top: 14.5%;
+    left: 3%;
+    width: 94%;
+    height: 46%;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
     background-color: #1d100c;
+    border-radius: 2%;
     color: #F4C9D6;
 }
 
 .name{
     width: 100%;
     margin: 0;
-    padding: 0 0.75rem;
+    padding: 0 1rem;
     color: #F4C9D6;
     font-family: "Pinyon Script", cursive;
-    font-size: clamp(1.5rem, 4.5vw, 4.5rem);
+    font-size: clamp(2rem, 3.8vw, 4rem);
     font-weight: 500;
     line-height: 1;
     text-align: center;
@@ -109,16 +108,16 @@ body{
     opacity: 0;
     color: #ff89AE;
     font-family: monospace;
-    font-size: clamp(0.8rem, 1.6vw, 1.3rem);
+    font-size: clamp(0.75rem, 1.5vw, 1.2rem);
     animation: error-flash 0.7s steps(2) 2.25s;
 }
 
 .coffee-spill{
     position: absolute;
     z-index: 5;
-    left: 18%;
-    bottom: 1%;
-    width: 47%;
+    left: -25%;
+    bottom: -1%;
+    width: 78%;
     opacity: 0;
     transform: scale(0.7);
     transform-origin: center;
