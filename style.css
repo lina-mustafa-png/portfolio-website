@@ -62,8 +62,8 @@ body{
     position: absolute;
     z-index: 3;
     left: 50%;
-    bottom: 20%;
-    width: min(1250px, 90vw);
+    bottom: 15%;
+    width: min(1000px, 80vw);
     transform: translateX(-50%);
     animation: laptop-shake 0.45s ease-in-out 2.25s;
 }
