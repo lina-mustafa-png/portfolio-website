@@ -186,7 +186,7 @@ body {
     border-right: 3px solid #f4c9d6;
     font-family: 'Courier New', monospace;
     /* font-size: clamp(2rem, 3.8vw, 4rem); */
-    font-size: clamp(1.25rem, 8cqw, 4rem);
+    font-size: clamp(1.4rem, 6cqw, 3.25rem);
     font-weight: 500;
     line-height: 1.2;
     text-shadow: 0 2px 6px rgb(38 21 13 / 45%);
@@ -461,7 +461,7 @@ body {
     }
 
     to {
-        width: 12ch;
+        width: 11.5ch;
     }
 }
 
@@ -519,8 +519,10 @@ body {
 /* split-screen and tablet layout */
 @media (max-width: 1024px) {
     .laptop-wrapper {
-        width: min(760px, 74vw);
+        left: 50%;
         bottom: 25%;
+        width: min(800px, 88vw);
+        transform: translateX(-50%);
     }
 
     .coffee-cup {
