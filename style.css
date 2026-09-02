@@ -193,7 +193,7 @@ body {
 .subtitle {
     position: absolute;
     top: 64%;
-    left: 35%;
+    left: 34%;
     width: 0;
     max-width: 90%;
     margin: 0;
@@ -201,7 +201,7 @@ body {
     overflow: hidden;
     white-space: nowrap;
     color: #f4c9d6;
-    border-right: 2px solid #f4c9d6;
+    border-right: 2px solid transparent;
     font-family: "Advent Pro", sans-serif;
     font-size: clamp(0.75rem, 1.5vw, 1.35rem);
     font-weight: 500;
