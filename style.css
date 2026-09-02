@@ -33,7 +33,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: min(100vw, clac(100svh * 16 /9));
+    width: min(100vw, calc(100svh * 16 /9));
     height: auto;
     aspect-ratio: 16 / 9;
     transform: translate(-50%, -50%);
