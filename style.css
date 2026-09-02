@@ -47,9 +47,12 @@ body {
     position: absolute;
     z-index: 5;
     /* width: clamp(520px, 42vw, 680px); */
-    width: clamp(200px, 42vw, 680px);
+    /* width: clamp(200px, 42vw, 680px);
     left: 12%;
-    top: 35%;
+    top: 35%; */
+    width: 68cqw;
+    left: -14%;
+    top: -55%;   
     transform-origin: 45% 45%;
     animation: tilt-cup 1.2s ease-in-out 1.7s forwards, hide-cup 0.15s linear 2.8s forwards;
 }
@@ -221,9 +224,12 @@ body {
     position: absolute;
     z-index: 6;
     /* width: clamp(520px, 42vw, 680px); */
-    width: clamp(200px, 42vw, 680px);
+    /* width: clamp(200px, 42vw, 680px);
     left: 21%;
-    top: 24%;
+    top: 24%; */
+    width: 68cqw;
+    left: -1%;
+    top: -75%;   
     opacity: 0;
     transform: scale(0.7);
     transform-origin: center;
