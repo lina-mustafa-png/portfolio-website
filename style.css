@@ -22,8 +22,8 @@ body {
     height: 100svh;
     margin: 0;
     padding: 0;
-    display: grid;
-    place-items: center;
+    /* display: grid;
+    place-items: center; */
     overflow: hidden;
 }
 
@@ -62,6 +62,7 @@ body {
     bottom: 24%;
     width: min(800px, 70vw);
     transform: translateX(-50%);
+    container-type: inline-size;
     animation: laptop-shake 0.45s ease-in-out 2.92s;
 }
 
@@ -70,6 +71,7 @@ body {
     z-index: 1;
     display: block;
     width: 100%;
+    height: auto;
 }
 
 .computer-screen {
@@ -97,7 +99,8 @@ body {
     padding: 0;
     color: #bcc2cc;
     font-family: 'Courier New', monospace;
-    font-size: clamp(0.6rem, 1.35vw, 1.2rem);
+    /* font-size: clamp(0.6rem, 1.35vw, 1.2rem); */
+    font-size: clamp(0.55rem, 2.4cqw, 1.2rem);
     font-weight: 600;
     line-height: 1.7;
     text-align: left;
@@ -155,7 +158,8 @@ body {
     gap: 0.4rem;
     color: #ff6b78;
     font-family: "Courier New", monospace;
-    font-size: clamp(1rem, 2.6vw, 2.4rem);
+    /* font-size: clamp(1rem, 2.6vw, 2.4rem); */
+    font-size: clamp(0.8rem, 5cqw, 2.4rem);
     font-weight: 700;
     text-align: center;
     opacity: 0;
@@ -181,7 +185,8 @@ body {
     color: #F4C9D6;
     border-right: 3px solid #f4c9d6;
     font-family: 'Courier New', monospace;
-    font-size: clamp(2rem, 3.8vw, 4rem);
+    /* font-size: clamp(2rem, 3.8vw, 4rem); */
+    font-size: clamp(1.25rem, 8cqw, 4rem);
     font-weight: 500;
     line-height: 1.2;
     text-shadow: 0 2px 6px rgb(38 21 13 / 45%);
@@ -203,7 +208,8 @@ body {
     color: #f4c9d6;
     border-right: 2px solid transparent;
     font-family: "Advent Pro", sans-serif;
-    font-size: clamp(0.75rem, 1.5vw, 1.35rem);
+    /* font-size: clamp(0.75rem, 1.5vw, 1.35rem); */
+    font-size: clamp(0.6rem, 2.7cqw, 1.35rem);
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.05em;
@@ -215,9 +221,9 @@ body {
 .coffee-spill {
     position: absolute;
     z-index: 6;
+    width: clamp(520px, 42vw, 680px);
     left: 21%;
     top: 24%;
-    width: clamp(520px, 42vw, 680px);
     opacity: 0;
     transform: scale(0.7);
     transform-origin: center;
@@ -507,5 +513,135 @@ body {
 
     50% {
         transform: translateY(7px);
+    }
+}
+
+/* split-screen and tablet layout */
+@media (max-width: 1024px) {
+    .laptop-wrapper {
+        width: min(760px, 74vw);
+        bottom: 25%;
+    }
+
+    .coffee-cup {
+        width: 58vw;
+        left: 1%;
+        top: 37%;
+    }
+
+    .coffee-spill {
+        width: 58vw;
+        left: 11%;
+        top: 30%;
+    }
+
+    .coffee-steam {
+        left: 23%;
+        top: 41%;
+    } 
+}
+
+@media (max-height: 650px) {
+    .laptop-wrapper {
+        width: min(620px, 62vw);
+        bottom: 21%;
+    }
+
+    .coffee-cup {
+        width: min(520px, 40vw);
+        top: 32%;
+    }
+
+    .coffee-spill {
+        width: min(520px, 40vw);
+        top: 22%;
+    }
+
+    .coffee-steam {
+        top: 36%;
+    }
+}
+
+/* mobile layout */
+@media (max-width: 600px) {
+    .desk {
+        object-position: center;
+    }
+
+    .laptop-wrapper {
+        width: 90vw;
+        bottom: 31%;
+    }
+
+    .coffee-cup {
+        width: 84vw;
+        left: -25%;
+        top: 43%;
+    }
+
+    .coffee-spill {
+        width: 84vw;
+        left: -9%;
+        top: 36%;
+    }
+
+    .coffee-steam {
+        left: 15%;
+        top: 45%;
+
+        width: 45px;
+        height: 65px;
+    }
+
+    .scroll-link {
+        bottom: 2%;
+        font-size: 1.8rem;
+    }
+
+    .menu {
+        padding: 3rem 1.25rem;
+    }
+
+    .menu-buttons {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .menu-buttons button {
+        width: min(100%, 280px);
+    }
+}
+
+/* reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+    .coffee-cup,
+    .coffee-steam,
+    .screen-code,
+    .error {
+        display: none;
+    }
+
+    .coffee-spill {
+        opacity: 1;
+        transform: none;
+        animation: none;
+    }
+
+    .laptop-wrapper {
+        animation: none;
+    }
+
+    .name,
+    .subtitle {
+        width: auto;
+        opacity: 1;
+
+        border-right: 0;
+        animation: none;
+    }
+
+    .scroll-link {
+        opacity: 1;
+        animation: none;
     }
 }
