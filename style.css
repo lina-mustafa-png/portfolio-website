@@ -186,7 +186,7 @@ body {
     border-right: 3px solid #f4c9d6;
     font-family: 'Courier New', monospace;
     /* font-size: clamp(2rem, 3.8vw, 4rem); */
-    font-size: clamp(1.4rem, 6cqw, 3.25rem);
+    font-size: clamp(1.4rem, 4cqw, 3rem);
     font-weight: 500;
     line-height: 1.2;
     text-shadow: 0 2px 6px rgb(38 21 13 / 45%);
@@ -461,7 +461,7 @@ body {
     }
 
     to {
-        width: 11.5ch;
+        width: 12.5ch;
     }
 }
 
@@ -520,33 +520,35 @@ body {
 @media (max-width: 1024px) {
     .laptop-wrapper {
         left: 50%;
-        bottom: 25%;
+        bottom: 28%;
         width: min(800px, 88vw);
         transform: translateX(-50%);
     }
 
     .coffee-cup {
         width: 58vw;
-        left: 1%;
-        top: 37%;
+        /* left: 1%;
+        top: 37%; */
+        left: -5%;
+        top: 40%
     }
 
     .coffee-spill {
         width: 58vw;
-        left: 11%;
-        top: 30%;
+        /* left: 11%;
+        top: 30%; */
+        left: 4%;
+        top: 34%;
     }
-
-    .coffee-steam {
-        left: 23%;
-        top: 41%;
-    } 
 }
 
 @media (max-height: 650px) {
     .laptop-wrapper {
-        width: min(620px, 62vw);
-        bottom: 21%;
+        left: 50%;
+        bottom: 28%;
+        /* width: min(620px, 62vw); */
+        width: 96vw;
+        transform: translateX(-50%);
     }
 
     .coffee-cup {
