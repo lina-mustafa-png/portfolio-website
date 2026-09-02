@@ -201,12 +201,14 @@ body {
     overflow: hidden;
     white-space: nowrap;
     color: #f4c9d6;
-    border-right: 2px solid transparent;
+    /* border-right: 2px solid transparent; */
     font-family: "Advent Pro", sans-serif;
     font-size: clamp(0.75rem, 1.5vw, 1.35rem);
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.05em;
+    opacity: 0;
+    transform: translate(-50%, -50%);
     animation: show-subtitle 0.01s linear 6s forwards, type-subtitle 2.3s steps(30, end) 6s forwards, blink-subtitle-cursor 0.7s step-end 6s infinite;
 }
 
