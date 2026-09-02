@@ -58,13 +58,14 @@ body {
 .coffee-steam {
     position: absolute;
     z-index: 7;
-    left: 26%;
+    left: 27%;
     top: 39%;
     width: 80px;
     height: 100px;
     display: flex;
     justify-content: center;
-    gap: 10px;
+    align-items: flex-end;
+    gap: 9px;
     pointer-events: none;
     animation: hide-steam 0.2s linear 1.7s forwards;
 }
@@ -74,19 +75,20 @@ body {
     width: 3px;
     height: 45px;
     border-radius: 50%;
-    background-color: rgb(255 255 255 / 55%);
+    background-color: rgb(95 68 60 / 70%);
+    box-shadow: 0 0 5px rgb(95 68 60 / 30%);
     filter: blur(1px);
     opacity: 0;
     animation: rise-steam 1.8s ease-out infinite;
 }
 
 .coffee-steam span:nth-child(2) {
-    height: 55px;
+    height: 58px;
     animation-delay: 0.4s;
 }
 
 .coffee-steam span:nth-child(3) {
-    height: 40px;
+    height: 42px;
     animation-delay: 0.8s;
 }
 
