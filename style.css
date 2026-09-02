@@ -22,6 +22,8 @@ body {
     height: 100svh;
     margin: 0;
     padding: 0;
+    display: grid;
+    place-items: center;
     overflow: hidden;
 }
 
@@ -55,10 +57,10 @@ body {
     animation: tilt-cup 1.2s ease-in-out 1.7s forwards, hide-cup 0.15s linear 2.8s forwards;
 }
 
-.coffee-steam {
+/* .coffee-steam {
     position: absolute;
     z-index: 7;
-    left: 28%;
+    left: 28.5%;
     top: 39%;
     width: 80px;
     height: 100px;
@@ -68,9 +70,9 @@ body {
     gap: 9px;
     pointer-events: none;
     animation: hide-steam 0.2s linear 1.7s forwards;
-}
+} */
 
-.coffee-steam span {
+/* .coffee-steam span {
     display: block;
     width: 3px;
     height: 45px;
@@ -90,7 +92,7 @@ body {
 .coffee-steam span:nth-child(3) {
     height: 42px;
     animation-delay: 0.8s;
-}
+} */
 
 .laptop-wrapper {
     position: absolute;
@@ -327,7 +329,7 @@ body {
 
 /* --- animations --- */
 
-@keyframes rise-steam {
+/* @keyframes rise-steam {
     0% {
         opacity: 0;
         transform: translateY(20px) translateX(0) scaleX(1);
@@ -353,7 +355,7 @@ body {
         opacity: 0;
         visibility: hidden;
     }
-}
+} */
 
 @keyframes hide-name-cursor {
     to {
