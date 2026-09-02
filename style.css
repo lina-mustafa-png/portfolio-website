@@ -201,7 +201,7 @@ body {
     overflow: hidden;
     white-space: nowrap;
     color: #f4c9d6;
-    /* border-right: 2px solid transparent; */
+    border-right: 2px solid transparent;
     font-family: "Advent Pro", sans-serif;
     font-size: clamp(0.75rem, 1.5vw, 1.35rem);
     font-weight: 500;
@@ -306,7 +306,7 @@ body {
     }
 
     to {
-        width: 30ch;
+        width: 29ch;
     }
 }
 
