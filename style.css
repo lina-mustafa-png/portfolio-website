@@ -170,7 +170,7 @@ body {
 
 .name {
     position: absolute;
-    top: 50%;
+    top: 42%;
     left: 50%;
     width: 0;
     max-width: 90%;
@@ -187,7 +187,27 @@ body {
     text-shadow: 0 2px 6px rgb(38 21 13 / 45%);
     opacity: 0;
     transform: translate(-50%, -50%);
-    animation: show-name 0.01s linear 4.35s forwards, type-name 1.5s steps(12, end) 4.35s forwards, blink-name-cursor 0.7s step-end 4.35s infinite;
+    animation: show-name 0.01s linear 4.35s forwards, type-name 1.5s steps(12, end) 4.35s forwards, blink-name-cursor 0.7s step-end 4.35s infinite, hide-name-cursor 0.01s linear 5.95s forwards;
+}
+
+.subtitle {
+    position: absolute;
+    top: 64%;
+    left: 50%;
+    width: 0;
+    max-width: 90%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #f4c9d6;
+    border-right: 2px solid #f4c9d6;
+    font-family: "Advent Pro", sans-serif;
+    font-size: clamp(0.75rem, 1.5vw, 1.35rem);
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.05em;
+    animation: show-subtitle 0.01s linear 6s forwards, type-subtitle 2.3s steps(30, end) 6s forwards, blink-subtitle-cursor 0.7s step-end 6s infinite;
 }
 
 .coffee-spill {
@@ -296,6 +316,39 @@ body {
 .menu-buttons button:focus-visible {
     outline: 3px solid #D9819C;
     outline-offset: 4px;
+}
+
+@keyframes hide-name-cursor {
+    to {
+        border-color: transparent;
+    }
+}
+
+@keyframes show-subtitle {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes type-subtitle {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 30ch;
+    }
+}
+
+@keyframes blink-subtitle-cursor {
+    0%,
+    100% {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: #f4c9d6;
+    }
 }
 
 @keyframes code-cursor-blink {
