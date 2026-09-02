@@ -193,7 +193,7 @@ body {
 .subtitle {
     position: absolute;
     top: 64%;
-    left: 34%;
+    left: 50%;
     width: 0;
     max-width: 90%;
     margin: 0;
@@ -306,7 +306,7 @@ body {
     }
 
     to {
-        width: 29ch;
+        width: 26ch;
     }
 }
 
