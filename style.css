@@ -529,7 +529,8 @@ body {
     }
 
     .laptop-wrapper {
-        width: min(800px, 85vw);
+        width: min(800px, 90vw);
+        bottom: 30%;
     }
 
     .menu {
