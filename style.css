@@ -31,75 +31,42 @@ body {
 
 .animation {
     position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
+    top: 50%;
+    left: 50%;
+    width: min(100vw, clac(100svh * 16 /9));
+    height: auto;
+    aspect-ratio: 16 / 9;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
 }
 
 .desk {
     position: absolute;
     z-index: 1;
     inset: 0;
-    display: block;
+    /* display: block; */
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: fill;
     object-position: center;
 }
 
 .coffee-cup {
     position: absolute;
     z-index: 5;
-    width: clamp(520px, 42vw, 680px);
+    width: 42%;
     left: 12%;
     top: 35%;
     transform-origin: 45% 45%;
     animation: tilt-cup 1.2s ease-in-out 1.7s forwards, hide-cup 0.15s linear 2.8s forwards;
 }
 
-/* .coffee-steam {
-    position: absolute;
-    z-index: 7;
-    left: 28.5%;
-    top: 39%;
-    width: 80px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    gap: 9px;
-    pointer-events: none;
-    animation: hide-steam 0.2s linear 1.7s forwards;
-} */
-
-/* .coffee-steam span {
-    display: block;
-    width: 3px;
-    height: 45px;
-    border-radius: 50%;
-    background-color: rgb(95 68 60 / 70%);
-    box-shadow: 0 0 5px rgb(95 68 60 / 30%);
-    filter: blur(1px);
-    opacity: 0;
-    animation: rise-steam 1.8s ease-out infinite;
-}
-
-.coffee-steam span:nth-child(2) {
-    height: 58px;
-    animation-delay: 0.4s;
-}
-
-.coffee-steam span:nth-child(3) {
-    height: 42px;
-    animation-delay: 0.8s;
-} */
-
 .laptop-wrapper {
     position: absolute;
     z-index: 3;
     left: 50%;
     bottom: 24%;
-    width: min(800px, 70vw);
+    width: 40%;
     transform: translateX(-50%);
     animation: laptop-shake 0.45s ease-in-out 2.92s;
 }
@@ -256,7 +223,7 @@ body {
     z-index: 6;
     left: 21%;
     top: 24%;
-    width: clamp(520px, 42vw, 680px);
+    width: 42%;
     opacity: 0;
     transform: scale(0.7);
     transform-origin: center;
@@ -328,34 +295,6 @@ body {
 }
 
 /* --- animations --- */
-
-/* @keyframes rise-steam {
-    0% {
-        opacity: 0;
-        transform: translateY(20px) translateX(0) scaleX(1);
-    }
-
-    30% {
-        opacity: 0.6;
-    }
-
-    65% {
-        opacity: 0.35;
-        transform: translateY(-15px) translateX(6px) scaleX(1.3);
-    }
-
-    100% {
-        opacity: 0;
-        transform: translateY(-45px) translateX(-5px) scaleX(0.8);
-    }
-}
-
-@keyframes hide-steam {
-    to {
-        opacity: 0;
-        visibility: hidden;
-    }
-} */
 
 @keyframes hide-name-cursor {
     to {
@@ -574,5 +513,23 @@ body {
 
     50% {
         transform: translateY(7px);
+    }
+}
+
+@media (max-width: 768px) {
+    .animation {
+        width: 165vw
+    }
+
+    .name {
+        font-size: clamp(1.2rem, 6vw, 2.5rem);
+    }
+
+    .subtitle {
+        font-size: clamp(0.6rem, 2.2vw, 1rem);
+    }
+
+    .screen-code {
+        font-size: clamp(0.5rem, 2vw, 0.9rem);
     }
 }
