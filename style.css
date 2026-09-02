@@ -193,7 +193,7 @@ body {
 .subtitle {
     position: absolute;
     top: 64%;
-    left: 50%;
+    left: 35%;
     width: 0;
     max-width: 90%;
     margin: 0;
@@ -222,38 +222,6 @@ body {
     animation: reveal-spill 0.25s ease-out 3s forwards;
 }
 
-.introduction {
-    position: absolute;
-    z-index: 10;
-    left: 50%;
-    bottom: 9%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    transform: translateX(-50%);
-    opacity: 0;
-    animation: reveal-introduction 0.01s linear 3.8s forwards;
-}
-
-.typewriter {
-    width: 0;
-    margin: 0 auto;
-    overflow: hidden;
-    white-space: nowrap;
-    color: #F4C9D6;
-    border-right: 3px solid #f4c9d6;
-    font-family: "Advent Pro", sans-serif;
-    font-size: clamp(1.8rem, 4vw, 4rem);
-    font-weight: 500;
-    line-height: 1.2;
-    letter-spacing: 0.04em;
-    animation: typing 2.8s steps(30, end) 3.8s forwards, blink-cursor 0.7s step-end 3.8s infinite;
-}
-
-#typed-text {
-    display: inline;
-}
-
 .cursor {
     display: inline;
     margin-left: 2px;
@@ -270,7 +238,7 @@ body {
     font-size: 2.2rem;
     opacity: 0;
     transform: translateX(-50%);
-    animation: reveal-arrow 0.8s ease 6.5s forwards;
+    animation: reveal-arrow 0.8s ease 8.5s forwards;
 }
 
 .scroll-link span {
@@ -514,7 +482,9 @@ body {
     from {
         opacity: 0;
         transform: translate(-50%, 10px);
-    }to {
+    }
+    
+    to {
         opacity: 1;
         transform: translate(-50%, 0);
     }
