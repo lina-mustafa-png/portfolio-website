@@ -62,7 +62,7 @@ body {
     z-index: 3;
     left: 50%;
     bottom: 24%;
-    width: min(800px, 70vw);
+    width: min(800px, 95vw);
     transform: translateX(-50%);
     container-type: inline-size;
     animation: laptop-shake 0.45s ease-in-out 2.92s;
