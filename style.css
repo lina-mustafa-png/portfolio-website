@@ -541,15 +541,7 @@ body {
     }
 
     .error {
-        animation:
-            error-sequence 1.1s linear 2.92s forwards, mobile-hide-error 0.01s linear 4.1s forwards;
-    }
-}
-
-@keyframes mobile-hide-error {
-    to {
-        opacity: 0;
-        visibility: hidden;
+        animation: error-sequence 1.1s linear 2.92s forwards, mobile-hide-error 0.01s linear 4.1s forwards;
     }
 }
 
@@ -559,21 +551,20 @@ body {
         bottom: 8%;
     }
 
-    .coffee-cup,
-    .coffee-spill {
-        top: -35%;
-    }
-
-    .name {
-        top: 38%;
-    }
-
-    .subtitle {
-        top: 58%;
-    }
-
     .scroll-link {
         bottom: 1%;
         font-size: 1.6rem;
+    }
+
+    .error {
+        animation: error-sequence 1.1s linear 2.92s forwards, mobile-hide-error 0.01s linear 4.1s forwards;
+    }
+
+}
+
+@keyframes mobile-hide-error {
+    to {
+        opacity: 0;
+        visibility: hidden;
     }
 }
