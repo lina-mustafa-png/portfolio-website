@@ -524,7 +524,7 @@ body {
 
 @media (max-width: 600px) {
     .coffee-cup {
-        left: 1%;
+        left: -5%;
     }
 
     .coffee-spill {
