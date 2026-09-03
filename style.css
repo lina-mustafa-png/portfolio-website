@@ -552,3 +552,28 @@ body {
         visibility: hidden;
     }
 }
+
+@media (max-height: 500px) {
+    .laptop-wrapper {
+        width: min(500px, 45vw);
+        bottom: 8%;
+    }
+
+    .coffee-cup,
+    .coffee-spill {
+        top: -35%;
+    }
+
+    .name {
+        top: 38%;
+    }
+
+    .subtitle {
+        top: 58%;
+    }
+
+    .scroll-link {
+        bottom: 1%;
+        font-size: 1.6rem;
+    }
+}
