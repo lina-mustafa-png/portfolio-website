@@ -530,7 +530,6 @@ body {
 
     .laptop-wrapper {
         width: min(800px, 95vw);
-        bottom: 50%;
     }
 
     .menu {
