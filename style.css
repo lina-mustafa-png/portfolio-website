@@ -194,7 +194,7 @@ body {
     text-shadow: 0 2px 6px rgb(38 21 13 / 45%);
     opacity: 0;
     transform: translate(-50%, -50%);
-    animation: show-name 0.01s linear 4.05s forwards, type-name 1.5s steps(12, end) 4.05s forwards, blink-name-cursor 0.7s step-end 4.05s infinite, hide-name-cursor 0.01s linear 5.65s forwards;
+    animation: show-name 0.01s linear 4.3s forwards, type-name 1.5s steps(12, end) 4.3s forwards, blink-name-cursor 0.7s step-end 4.3s infinite, hide-name-cursor 0.01s linear 5.9s forwards;
 }
 
 .subtitle {
@@ -217,7 +217,7 @@ body {
     letter-spacing: 0.05em;
     opacity: 0;
     transform: translate(-50%, -50%);
-    animation: show-subtitle 0.01s linear 5.7s forwards, type-subtitle 2.3s steps(30, end) 5.7s forwards, blink-subtitle-cursor 0.7s step-end 5.7s infinite;
+    animation: show-subtitle 0.01s linear 5.95s forwards, type-subtitle 2.3s steps(30, end) 5.95s forwards, blink-subtitle-cursor 0.7s step-end 5.95s infinite;
 }
 
 .coffee-spill {
