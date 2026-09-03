@@ -165,7 +165,7 @@ body {
     text-align: center;
     opacity: 0;
     z-index: 1;
-    animation: error-sequence 1.1s steps(2) 2.92s forwards;   
+    animation: error-sequence 1.1s steps(2) 2.92s forwards, force-hide-error 0.01s linear 4.02s forwards;   
 }
 
 .error small {
@@ -392,6 +392,13 @@ body {
     }
 
     100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes force-hide-error {
+    to {
         opacity: 0;
         visibility: hidden;
     }
