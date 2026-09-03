@@ -548,9 +548,14 @@ body {
 @media (max-height: 500px) {
     .laptop-wrapper {
         width: min(500px, 45vw);
-        bottom: 8%;
+        bottom: 12%;
     }
 
+    .name {
+        text-align: center;
+        white-space: nowrap;
+    }
+    
     .scroll-link {
         bottom: 1%;
         font-size: 1.6rem;
