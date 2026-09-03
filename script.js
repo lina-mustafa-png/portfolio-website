@@ -3,7 +3,7 @@ const projects = document.getElementById("projectsbtn");
 const skills = document.getElementById("skillsbtn");
 const contact = document.getElementById("contactbtn");
 
-projects.addEventListener("click", function () {
+about.addEventListener("click", function () {
     window.location.href = "about.html";
 });
 
@@ -11,10 +11,10 @@ projects.addEventListener("click", function () {
     window.location.href = "projects.html";
 });
 
-projects.addEventListener("click", function () {
+skills.addEventListener("click", function () {
     window.location.href = "skills.html";
 });
 
-projects.addEventListener("click", function () {
+contact.addEventListener("click", function () {
     window.location.href = "contact.html";
 });
