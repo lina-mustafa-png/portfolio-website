@@ -41,11 +41,8 @@ body {
     position: absolute;
     z-index: 1;
     inset: 0;
-    /* display: block; */
     width: 100%;
     height: 100%;
-    /* object-fit: fill; */
-    /* object-position: center; */
 }
 
 .coffee-cup {
@@ -54,7 +51,7 @@ body {
     width: 16%;
     height: auto;
     left: 17%;
-    top: 59%;   
+    top: 50%;   
     transform-origin: 45% 45%;
     animation: tilt-cup 1.2s ease-in-out 1.7s forwards, hide-cup 0.15s linear 2.8s forwards;
 }
@@ -206,8 +203,8 @@ body {
     z-index: 6;
     width: 43%;
     height: auto;
-    left: 23%;
-    top: 64%;   
+    left: 21%;
+    top: 58%;   
     opacity: 0;
     transform: scale(0.7);
     transform-origin: center;
