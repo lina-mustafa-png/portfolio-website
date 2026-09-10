@@ -201,10 +201,10 @@ body {
 .coffee-spill {
     position: absolute;
     z-index: 6;
-    width: 43%;
+    width: 16%;
     height: auto;
     left: 21%;
-    top: 58%;   
+    top: 50%;   
     opacity: 0;
     transform: scale(0.7);
     transform-origin: center;
