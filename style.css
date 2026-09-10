@@ -72,7 +72,7 @@ body {
     padding: 0;
     color: #bcc2cc;
     font-family: "Courier New", monospace;
-    font-size: clamp(0.7rem, 3.6cqw, 1.7rem);
+    font-size: clamp(0.7rem, 3.9cqw, 1.7rem);
     font-weight: 600;
     line-height: 1.55;
     text-align: left;
@@ -128,21 +128,22 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 0.4rem;
+    gap: 0.25em;
     color: #ff6b78;
     font-family: "Courier New", monospace;
-    font-size: clamp(0.8rem, 5cqw, 2.4rem);
+    font-size: clamp(1.2rem, 9cqw, 4rem);
     font-weight: 700;
+    line-height: 1;
     text-align: center;
     opacity: 0;
     visibility: hidden;
-    /* animation: error-sequence 1.1s steps(2) 2.92s forwards;    */
     animation: error-sequence 1.1s linear 2.92s forwards, remove-error 0.01s linear 4.1s forwards;
 }
 
 .error small {
     color: #f4c9d6;
-    font-size: 0.45em;
+    font-size: 0.38em;
+    line-height: 1.1;
     letter-spacing: 0.15em;
 }
 
@@ -170,7 +171,7 @@ body {
     border-right: 2px solid transparent;
     opacity: 0;
     font-family: 'Courier New', monospace;
-    font-size: clamp(1rem, 8cqw, 4rem);
+    font-size: clamp(1rem, 9cqw, 4rem);
     line-height: 1.05;
     text-shadow: 0 2px 6px rgb(38 21 13 / 45%);
     animation: show-name 0.01s linear 4.3s forwards, type-name 1.5s steps(12, end) 4.3s forwards, blink-name-cursor 0.7s step-end 4.3s infinite, hide-name-cursor 0.01s linear 5.9s forwards;
@@ -187,7 +188,7 @@ body {
     color: #f4c9d6;
     border-right: 2px solid transparent;
     font-family: "Advent Pro", sans-serif;
-    font-size: clamp(0.55rem, 4cqw, 1.35rem);
+    font-size: clamp(0.55rem, 5cqw, 1.35rem);
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.03em;
@@ -198,7 +199,7 @@ body {
 .coffee-spill {
     position: absolute;
     z-index: 6;
-    width: 38%;
+    width: 36.5%;
     height: auto;
     left: 19%;
     top: 49%;   
