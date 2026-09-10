@@ -20,27 +20,32 @@ body {
     width: 100%;
     height: 100vh;
     height: 100svh;
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
     overflow: hidden;
 }
 
 .animation {
     position: absolute;
-    inset: 0;
+    left: 50%;
+    top: 50%;
+    /* inset: 0;
     width: 100%;
-    height: 100%;
+    height: 100%; */
+    width: max(100vw, calc(100svh * 1580 / 1114));
+    aspect-ratio: 1580 / 1114;
+    transform: translate(-50%, -50%);
 }
 
 .desk {
     position: absolute;
     z-index: 1;
     inset: 0;
-    display: block;
+    /* display: block; */
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: center;
+    /* object-fit: fill; */
+    /* object-position: center; */
 }
 
 .coffee-cup {
@@ -50,14 +55,15 @@ body {
     /* width: clamp(200px, 42vw, 680px);
     left: 12%;
     top: 35%; */
-    width: 68cqw;
-    left: -14%;
-    top: 35%;   
+    width: 11%;
+    height: auto;
+    left: 22%;
+    top: 57%;   
     transform-origin: 45% 45%;
     animation: tilt-cup 1.2s ease-in-out 1.7s forwards, hide-cup 0.15s linear 2.8s forwards;
 }
 
-.laptop-wrapper {
+/* .laptop-wrapper {
     position: absolute;
     z-index: 3;
     left: 50%;
@@ -74,21 +80,22 @@ body {
     display: block;
     width: 100%;
     height: auto;
-}
+} */
 
 .computer-screen {
     position: absolute;
     z-index: 2;
-    top: 14.5%;
-    left: 3%;
-    width: 94%;
-    height: 46%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    left: 30.5%;
+    top: 20.5%;
+    width: 38%;
+    height: 30.5%;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
     overflow: hidden;
-    border-radius: 12px;
-    pointer-events: none;
+    container-type: inline-size;
+    /* border-radius: 12px; */
+    /* pointer-events: none; */
 }
 
 .screen-code {
@@ -174,58 +181,72 @@ body {
     letter-spacing: 0.15em;
 }
 
-.name {
+.intro-text {
     position: absolute;
-    top: 42%;
-    left: 50%;
+    z-index: 3;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    text-align: center;
+    pointer-events: none;
+}
+
+.name {
+    position: static;
+    /* top: 42%;
+    left: 50%; */
     width: 0;
-    max-width: 90%;
+    max-width: 100%;
     margin: 0;
-    padding: 0;
+    /* padding: 0; */
     overflow: hidden;
     white-space: nowrap;
     color: #F4C9D6;
-    border-right: 3px solid #f4c9d6;
+    border-right: 2px solid #f4c9d6;
     font-family: 'Courier New', monospace;
-    font-size: clamp(1.45rem, 4.5cqw, 3rem);
-    font-weight: 500;
-    line-height: 1.2;
+    font-size: clamp(1rem, 8cqw, 4rem);
+    /* font-weight: 500; */
+    line-height: 1.05;
     text-shadow: 0 2px 6px rgb(38 21 13 / 45%);
-    opacity: 0;
-    transform: translate(-50%, -50%);
-    z-index: 3;
+    /* opacity: 0; */
+    /* transform: translate(-50%, -50%); */
+    /* z-index: 3; */
     animation: show-name 0.01s linear 4.3s forwards, type-name 1.5s steps(12, end) 4.3s forwards, blink-name-cursor 0.7s step-end 4.3s infinite, hide-name-cursor 0.01s linear 5.9s forwards;
 }
 
 .subtitle {
-    position: absolute;
-    top: 64%;
-    left: 50%;
+    position: static;
     width: 0;
-    max-width: 90%;
-    margin: 0;
+    max-width: 100%;
+    margin: 0.5em 0 0;
     padding: 0;
     overflow: hidden;
     white-space: nowrap;
     color: #f4c9d6;
     border-right: 2px solid transparent;
     font-family: "Advent Pro", sans-serif;
-    font-size: clamp(0.6rem, 2.7cqw, 1.35rem);
+    font-size: clamp(0.55rem, 4cqw, 1.35rem);
     font-weight: 500;
     line-height: 1.2;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.03em;
     opacity: 0;
+    /* top: 64%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 3;
+    z-index: 3; */
     animation: show-subtitle 0.01s linear 5.95s forwards, type-subtitle 2.3s steps(30, end) 5.95s forwards, blink-subtitle-cursor 0.7s step-end 5.95s infinite;
 }
 
 .coffee-spill {
     position: absolute;
     z-index: 6;
-    width: 68cqw;
-    left: -1%;
-    top: 24%;   
+    width: 27%;
+    height: auto;
+    left: 20%;
+    top: 57%;   
     opacity: 0;
     transform: scale(0.7);
     transform-origin: center;
@@ -393,7 +414,7 @@ body {
 
 @keyframes tilt-cup {
     0% {
-        tranform: rotate(0deg);
+        transform: rotate(0deg);
     }
 
     60% {
@@ -429,7 +450,7 @@ body {
     }
 }
 
-@keyframes laptop-shake {
+/* @keyframes laptop-shake {
     0%, 100% {
         transform: translateX(-50%);
     }
@@ -449,7 +470,7 @@ body {
     80% {
         transform: translateX(calc(-50% + 5px));
     }
-}
+} */
 
 @keyframes show-name {
     to {
@@ -463,7 +484,7 @@ body {
     }
 
     to {
-        width: 12.5ch;
+        width: 12ch;
     }
 }
 
@@ -519,18 +540,6 @@ body {
 }
 
 @media (max-width: 650px) {
-    .coffee-cup {
-        left: -8%;
-    }
-
-    .coffee-spill {
-        left: 8%;
-    }
-
-    .laptop-wrapper {
-        width: min(800px, 95vw);
-    }
-
     .menu {
         padding: 3rem 6%;
     }
@@ -539,23 +548,15 @@ body {
         padding: 0.7rem 1.5rem;
         font-size: 1.1rem;
     }
-
-    .error {
-        animation: error-sequence 1.1s linear 2.92s forwards, mobile-hide-error 0.01s linear 4.1s forwards;
-    }
 }
 
-@media (max-height: 500px) {
-    .laptop-wrapper {
-        width: min(500px, 45vw);
-        bottom: 12%;
-    }
+/* @media (max-height: 500px) {
 
     .name {
         text-align: center;
         white-space: nowrap;
     }
-    
+
     .scroll-link {
         bottom: 1%;
         font-size: 1.6rem;
@@ -565,11 +566,11 @@ body {
         animation: error-sequence 1.1s linear 2.92s forwards, mobile-hide-error 0.01s linear 4.1s forwards;
     }
 
-}
-
+} */
+/* 
 @keyframes mobile-hide-error {
     to {
         opacity: 0;
         visibility: hidden;
     }
-}
+} */
