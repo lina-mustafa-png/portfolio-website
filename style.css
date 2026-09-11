@@ -509,7 +509,7 @@ body {
     }
 }
 
-@media (max-width: 650px) and (orientation: portrait) {
+@media (max-width: 600px) and (orientation: portrait) {
     .animation {
         width: max(100vw, calc(100svh * 657 / 1167));
         height: auto;
