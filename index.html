@@ -5,7 +5,7 @@
         <meta charset="UTF-8"/> <!-- describes the charcter system used -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!-- proper display on different screen sizes -->
         <title>lina's portfolio</title>
-        <link rel="stylesheet" href="style.css?v=6"/>
+        <link rel="stylesheet" href="style.css?v=5"/>
         <link rel="icon" type="image/png" href="favicon.png">
         <!-- fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,13 +18,12 @@
         <main class="hero">
             <div class="animation">
                 <!-- background desk -->
-                <img class="desk" src="images/background2.png" alt="Illustrated desk workspace">
-
-                <!-- laptop -->               
-                <!-- <div class="laptop-wrapper">     -->
-                <!-- coffee cup -->
-                    <!-- <img class="coffee-cup" src="images/coffee-cup.png" alt="Illustrated cup of coffee">
-                    <img class="laptop" src="images/laptop.png" alt="Illustrated computer"> -->
+                <picture class="desk-picture">
+                    <!-- mobile -->
+                    <source media="(max-width: 650px) and (orientation: portrait)" srcset="images/background-mobile.png">
+                    <!-- landscape -->
+                    <img class="desk" src="images/background2.png" alt="Illustrated desk workspace">
+                </picture>
                     
                 <div class="computer-screen">
                     <pre class="screen-code"><code><span class="keyword">int</span> <span class="function">main</span><span class="symbol">() {</span><br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="printf">printf</span><span class="symbol">(</span><span class="string">"Hello, World!"</span><span class="symbol">);</span><br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span>&nbsp;<span class="number">0</span><span class="symbol">;</span><br><span class="symbol">}</span><span class="code-cursor" aria-hidden="true"></span></code></pre>
